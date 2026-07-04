@@ -29,9 +29,11 @@ export async function handle(request, env, ctx) {
           if (match.includes("http-origin=")) {
             return match;
           }
+          
           if (p1 !== undefined) {
             return `#EXTINF:${p1.trimEnd()} http-origin="${env.PANDALIVE_HTTP_ORIGIN}",${p3}`;
           }
+          
           return `#EXTINF:${p4.trimEnd()} http-origin="${env.PANDALIVE_HTTP_ORIGIN}",${p5}`;
         }
       );
@@ -50,6 +52,7 @@ export async function handle(request, env, ctx) {
   }
 
   response = await getFromCache(cache, env.PANDALIVE_PATH);
+  
   if (response) {
     return response;
   }
