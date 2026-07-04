@@ -5,9 +5,21 @@
 
   "vars": {
     "PANDALIVE_PATH": "/live/pandalive.m3u",
-    "M3U_SOURCE_URL": "https://5721004.xyz/player/list.m3u",
-    "HTTP_ORIGIN": "https://www.pandalive.co.kr",
-    "CACHE_TTL": "600",
+    "PANDALIVE_SOURCE_URL": "https://5721004.xyz/player/list.m3u",
+    "PANDALIVE_HTTP_ORIGIN": "https://www.pandalive.co.kr",
+    "PANDALIVE_CACHE_TTL": "600",
+
+    "KULAO_PATH": "/live/kulao.m3u",
+    "KULAO_SOURCE_URL": "https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg1.m3u",
+
+    "SUXUANG_PATH": "/live/suxuang.m3u",
+    "SUXUANG_SOURCE_URL": "https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u",
+
+    "GARY_PATH": "/live/gary.m3u",
+    "GARY_SOURCE_URL": "https://garyshare.sharewithyou.dpdns.org/garyshare_nofools.m3u",
+
+    "CACHE_TTL": "21600",
+    
     "USER_AGENT": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
   }
 }
