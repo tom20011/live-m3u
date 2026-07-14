@@ -15,7 +15,8 @@ export default {
       return fixEpg(request, env, ctx);
     }
 
-    if (path === env.SUXUANG_PATH || path === env.GARY_PATH) {
+    const isCacheable = Object.keys(env).some(key => key.endsWith('_PATH') && env[key] === path);
+    if (isCacheable) {
       return cacheM3u(request, env, ctx);
     }
 
