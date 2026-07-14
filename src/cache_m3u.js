@@ -6,13 +6,12 @@ export async function handle(request, env, ctx) {
   const url = new URL(request.url);
   const path = url.pathname;
 
-  let sourceUrl;
-  if (path === env.SUXUANG_PATH) {
-    sourceUrl = env.SUXUANG_SOURCE_URL;
-  } else if (path === env.GARY_PATH) {
-    sourceUrl = env.GARY_SOURCE_URL;
+  const pathKey = Object.keys(env).find(key => key.endsWith('_PATH') && env[key] === path);
+  if (!pathKey) {
+    return new Response("Not Found", { status: 404 });
   }
 
+  const sourceUrl = env[pathKey.replace('_PATH', '_SOURCE_URL')];
   if (!sourceUrl) {
     return new Response("Not Found", { status: 404 });
   }
