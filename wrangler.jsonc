@@ -9,20 +9,26 @@
     "PANDALIVE_HTTP_ORIGIN": "https://www.pandalive.co.kr",
     "PANDALIVE_CACHE_TTL": "600",
 
-    "KULAO_PATH": "/live/kulao.m3u",
-    "KULAO_SOURCE_URL": "https://live.445569.xyz/live.m3u",
-
-    "SUXUANG_PATH": "/live/suxuang.m3u",
-    "SUXUANG_SOURCE_URL": "https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u",
-
-    "GARY_PATH": "/live/gary.m3u",
-    "GARY_SOURCE_URL": "https://garyshare.sharewithyou.dpdns.org/garyshare_goal.m3u",
-
-    "YUECHEN_PATH": "/live/yuechen.m3u",
-    "YUECHEN_SOURCE_URL": "https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/GNTV.m3u",
-
-    "YANG_PATH": "/live/yang.m3u",
-    "YANG_SOURCE_URL": "https://iptv.yang-1989.xyz/playlist.m3u",
+    "APTV_PATH" : "/live/aptv.m3u",
+    "APTV_SOURCE_URL" : "https://bit.ly/iptv-aptv",
+    
+    "GARY_PATH" : "/live/gary.m3u",
+    "GARY_SOURCE_URL" : "https://garysclub.sharewithyou.dpdns.org/garysclub.m3u",
+    
+    "KULAO_PATH" : "/live/kulao.m3u",
+    "KULAO_SOURCE_URL" : "https://live.445569.xyz/live.m3u",
+    
+    "RADIO_PATH" : "/live/radio.m3u",
+    "RADIO_SOURCE_URL" : "https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/Radio.m3u",
+    
+    "SUXUANG_PATH" : "/live/suxuang.m3u",
+    "SUXUANG_SOURCE_URL" : "https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u",
+    
+    "YANG_PATH" : "/live/yang.m3u",
+    "YANG_SOURCE_URL" : "https://iptv.1989.click/playlist.m3u",
+    
+    "YUECHEN_PATH" : "/live/yuechen.m3u",
+    "YUECHEN_SOURCE_URL" : "https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/GNTV.m3u",
 
     "CACHE_TTL": "21600",
     
