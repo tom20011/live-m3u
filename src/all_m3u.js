@@ -5,7 +5,7 @@ const refreshPromises = {};
 function getConfiguredPaths(env) {
   const paths = [];
   for (const key of Object.keys(env)) {
-    if (key.endsWith('_PATH') && env[key] !== '/live/all.m3u' && env[key] !== env.PANDALIVE_PATH) {
+    if (key.endsWith('_PATH') && env[key] !== '/live/all.m3u' && env[key] !== env.PANDALIVE_PATH && env[key] !== env.GARY_PATH) {
       paths.push(env[key]);
     }
   }
