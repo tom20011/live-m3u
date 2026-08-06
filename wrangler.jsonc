@@ -34,7 +34,7 @@
     "FMM_SOURCE_URL" : "https://raw.githubusercontent.com/fanmingming/live/refs/heads/main/radio/m3u/index.m3u",
 
     "JAPAN_PATH" : "/live/japan.m3u",
-    "JAPAN_SOURCE_URL" : "https://gitflic.ru/project/reaperc/jp-iptv/blob/raw?file=JP_NOVPN_Categories.m3u",
+    "JAPAN_SOURCE_URL" : "https://gitflic.ru/project/reaperc/jp-iptv/blob/raw?file=JP_Auto.m3u",
 
     "CACHE_TTL": "21600",
     
