@@ -30,10 +30,17 @@
     "YUECHEN_PATH" : "/live/yuechen.m3u",
     "YUECHEN_SOURCE_URL" : "https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/GNTV.m3u",
 
+    "FMM_PATH" : "/live/fmm.m3u",
+    "FMM_SOURCE_URL" : "https://raw.githubusercontent.com/fanmingming/live/refs/heads/main/radio/m3u/index.m3u",
+
+    "JAPAN_PATH" : "/live/japan.m3u",
+    "JAPAN_SOURCE_URL" : "https://gitflic.ru/project/reaperc/jp-iptv/blob/raw?file=JP_NOVPN_Categories.m3u",
+
     "CACHE_TTL": "21600",
     
     "USER_AGENT": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
   },
+
   "observability": {
     "enabled": true,
     "head_sampling_rate": 1,
