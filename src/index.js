@@ -2,11 +2,16 @@ import { handle as fixOrigin } from './fix_origin.js';
 import { handle as fixEpg } from './fix_epg.js';
 import { handle as cacheM3u } from './cache_m3u.js';
 import { handle as allM3u } from './all_m3u.js';
+import { handle as clearCache } from './clear_cache.js';
 
 export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
     const path = url.pathname;
+
+    if (path === '/clear') {
+      return clearCache(request, env, ctx);
+    }
 
     if (path === '/live/all.m3u') {
       return allM3u(request, env, ctx);
