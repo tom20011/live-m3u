@@ -23,7 +23,9 @@ export async function handle(request, env, ctx) {
     try {
       const text = await downloadSource(env.KULAO_SOURCE_URL, env.USER_AGENT);
 
-      const modified = text.replace(/\s+epg-url="[^"]*"/g, "");
+      const modified = text
+        .replace(/\s+epg-url="[^"]*"/g, "")
+        .replace(/https:\/\/epg\.112114\.xyz\//g, env.KULAO_LOGO_BASE_URL);
 
       await cacheResult(cache, env.KULAO_PATH, modified, env.CACHE_TTL);
     } finally {
